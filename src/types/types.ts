@@ -1,7 +1,4 @@
 export interface Metrics {
-    value: string;
-
-    startTime: string;
 
     entries: PerformanceEntry[];
 }
@@ -20,3 +17,13 @@ export interface HandlerMetrics {
 export interface HandleCustom {
     (type: Custom): void;
 }
+
+export interface LargestContentfulPaint extends PerformanceEntry {
+    element: HTMLElement;
+    size: number;
+    renderTime: number;
+}
+
+export interface CumulateLayoutShift  extends LargestContentfulPaint {
+    sources: []
+}   

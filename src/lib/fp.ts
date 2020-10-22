@@ -3,6 +3,7 @@ import { HandleCustom } from '../types/types';
 
 const FP = (callback: HandleCustom, t?: string) => {
     observer('paint', (arg: PerformanceEntry) => {
+        console.log('6000', arg);
         t = t || 'first-paint';
         if(arg.name === t) {
             const customData = {

@@ -1,14 +1,23 @@
-import Perf from './lib/performance';
 import FP from './lib/fp';
 import FCP from './lib/fcp';
+import LCP from './lib/lcp';
+import CLS from './lib/cls';
 
 FP((arg) => {
-    console.log(arg);
+    console.log('5000',arg);
 });
 
 FCP((arg) => {
-    console.log(arg);
+    console.log('5000',arg);
 });
+
+LCP((arg) => {
+    console.log('5000',arg);
+});
+
+CLS((arg) => {
+    console.log('500', arg)
+})
 
 
 
