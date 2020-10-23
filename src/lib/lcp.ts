@@ -4,12 +4,14 @@ import { HandleCustom, LargestContentfulPaint, HandlerMetrics } from '../types/t
 const LCP = (callback: HandleCustom) => {
 
     const hander = (arg: LargestContentfulPaint) => {
-        console.log('6000', arg)
+        console.log('6000 largetst', arg);
         callback({
             name: arg.entryType,
-            value: String(arg.startTime),
-            startTime: 'fdfd',
-            element: arg.element
+            startTime: String(arg.startTime),
+            value: String(arg.loadTime),
+            renderTime: String(arg.renderTime),
+            element: arg.element.className,
+            size: arg.size
         });
     };
 

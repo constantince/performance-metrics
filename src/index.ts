@@ -4,24 +4,24 @@ import LCP from './lib/lcp';
 import CLS from './lib/cls';
 
 FP((arg) => {
-    console.log('5000',arg);
+    console.log('5000 fp',arg);
 });
 
 FCP((arg) => {
-    console.log('5000',arg);
+    console.log('5000 fcp',arg);
 });
 
 LCP((arg) => {
-    console.log('5000',arg);
+    console.log('5000 lcp',arg);
 });
 
 CLS((arg) => {
-    console.log('500', arg)
+    console.log('5000 cls', arg)
 })
 
 
 
-export default { FP };
+export default { FP, FCP, LCP, CLS };
 
 /*
 import Perf from 'performance-metrics';
