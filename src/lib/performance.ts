@@ -1,6 +1,6 @@
-import { HandlerMetrics } from '../types/types';
+import { HanderPerformanceFn } from '../types/types';
 
-const observer = (type: string, callback: HandlerMetrics): PerformanceObserver | undefined => {
+const observer = (type: string, callback: HanderPerformanceFn): PerformanceObserver | undefined => {
     try {
         if (PerformanceObserver.supportedEntryTypes.includes(type)) {
             

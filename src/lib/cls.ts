@@ -1,8 +1,15 @@
 import observer from './performance';
-import { HandleCustom, CumulateLayoutShift, HandlerMetrics} from '../types/types';
+// import Handler from './handler';
+import {HandlerCumstomBehaivor,  HandleCustom, CumulateLayoutShift, HanderPerformanceFn, HandlerMetricsFn, Custom} from '../types/types';
+// import handler from './handler';
+
 
 const CLS = (callback: HandleCustom) => {
-    const handler = (arg: CumulateLayoutShift) => {
+
+    // const handler: (HandlerMetricsFn<CumulateLayoutShift>) = Handler;
+
+    // // hander();
+    const handler: HandlerCumstomBehaivor<CumulateLayoutShift> = (arg) => {
         // console.log('6000', arg);
         callback({
             value: String(arg.value),
@@ -16,6 +23,6 @@ const CLS = (callback: HandleCustom) => {
         })
     }
 
-    observer('layout-shift', <HandlerMetrics>handler);
+    observer('layout-shift', handler as HanderPerformanceFn);
 }
 export default CLS;

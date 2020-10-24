@@ -4,32 +4,25 @@ import LCP from './lib/lcp';
 import CLS from './lib/cls';
 import TTFB from './lib/ttfb';
 import Source from './lib/resource';
-FP((arg) => {
-    console.log('5000 fp',arg);
+FP(function (arg) {
+    console.log('5000 fp', arg);
 });
-
-FCP((arg) => {
-    console.log('5000 fcp',arg);
+FCP(function (arg) {
+    console.log('5000 fcp', arg);
 });
-
-LCP((arg) => {
-    console.log('5000 lcp',arg);
+LCP(function (arg) {
+    console.log('5000 lcp', arg);
 });
-
-CLS((arg) => {
-    console.log('5000 cls', arg)
+CLS(function (arg) {
+    console.log('5000 cls', arg);
 });
-TTFB((arg) => {
+TTFB(function (arg) {
     console.log('5000 ttfb', arg);
-})
-Source(/\.gif/, (arg) => {
+});
+Source(/\.gif/, function (arg) {
     console.log(arg);
-})
-
-
-
-export default { FP, FCP, LCP, CLS };
-
+});
+export default { FP: FP, FCP: FCP, LCP: LCP, CLS: CLS };
 /*
 import Perf from 'performance-metrics';
 
@@ -53,4 +46,4 @@ p.use(['tti', 'fp', 'fcp', 'flp', 'fid', 'ttfb']).then(res => {
 })
 
 
-*/
+*/ 

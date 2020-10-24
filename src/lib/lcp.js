@@ -1,9 +1,6 @@
 import observer from './performance';
-import { HandleCustom, LargestContentfulPaint, HandlerMetricsFn, HanderPerformanceFn } from '../types/types';
-
-const LCP = (callback: HandleCustom) => {
-
-    const handler = (arg: LargestContentfulPaint) => {
+var LCP = function (callback) {
+    var handler = function (arg) {
         console.log('6000 largetst', arg);
         callback({
             name: arg.entryType,
@@ -14,7 +11,6 @@ const LCP = (callback: HandleCustom) => {
             size: arg.size
         });
     };
-
-    observer('largest-contentful-paint',  <HanderPerformanceFn>handler);
-}
+    observer('largest-contentful-paint', handler);
+};
 export default LCP;
