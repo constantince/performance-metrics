@@ -31,7 +31,7 @@ Source(/\.gif/, (arg) => {
 });
 // TO be continue
 TTI(arg => {
-    console.log('5000 tti',arg);
+    console.log('5000 tti', arg);
 });
 
 
