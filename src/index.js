@@ -3,6 +3,7 @@ import FCP from './lib/fcp';
 import LCP from './lib/lcp';
 import CLS from './lib/cls';
 import TTFB from './lib/ttfb';
+import TTI from './lib/tti';
 import Source from './lib/resource';
 FP(function (arg) {
     console.log('5000 fp', arg);
@@ -20,9 +21,13 @@ TTFB(function (arg) {
     console.log('5000 ttfb', arg);
 });
 Source(/\.gif/, function (arg) {
-    console.log(arg);
+    console.log('5000 source', arg);
 });
-export default { FP: FP, FCP: FCP, LCP: LCP, CLS: CLS };
+// TO be continue
+TTI(function (arg) {
+    console.log('5000 tti', arg);
+});
+export default { FP: FP, FCP: FCP, LCP: LCP, CLS: CLS, TTFB: TTFB, Source: Source, TTI: TTI };
 /*
 import Perf from 'performance-metrics';
 

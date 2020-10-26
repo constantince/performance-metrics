@@ -1,6 +1,6 @@
 import observer from './performance';
 // import Handler from './handler';
-import {HandlerCumstomBehaivor,  HandleCustom, CumulateLayoutShift, HanderPerformanceFn, HandlerMetricsFn, Custom} from '../types/types';
+import {HandlerCumstomBehaivor,  HandleCustom, CumulateLayoutShift, HanderPerformanceFn} from '../types/types';
 // import handler from './handler';
 
 

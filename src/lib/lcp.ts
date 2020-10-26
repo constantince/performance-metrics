@@ -1,5 +1,5 @@
 import observer from './performance';
-import { HandleCustom, LargestContentfulPaint, HandlerMetricsFn, HanderPerformanceFn } from '../types/types';
+import { HandleCustom, LargestContentfulPaint, HanderPerformanceFn } from '../types/types';
 
 const LCP = (callback: HandleCustom) => {
 

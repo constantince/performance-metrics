@@ -1,5 +1,4 @@
 export interface Metrics {
-
     entries: PerformanceEntry[];
 }
 
@@ -44,6 +43,11 @@ export interface CumulateLayoutShift  extends LargestContentfulPaint {
     sources: [{
         node: HTMLElement
     }]
+}
+
+export interface TimeToFirstByte extends PerformanceEntry {
+    name: string,
+    value: number
 }
 
 export interface TTFBContent {

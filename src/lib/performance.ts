@@ -1,6 +1,6 @@
 import { HanderPerformanceFn } from '../types/types';
 
-const observer = (type: string, callback: HanderPerformanceFn): PerformanceObserver | undefined => {
+const Observer = (type: string, callback: HanderPerformanceFn): PerformanceObserver | undefined => {
     try {
         if (PerformanceObserver.supportedEntryTypes.includes(type)) {
             
@@ -18,4 +18,4 @@ const observer = (type: string, callback: HanderPerformanceFn): PerformanceObser
 }
 
 
-export default observer;
+export default Observer;
