@@ -10,7 +10,7 @@ const LCP = (callback: HandleCustom) => {
             startTime: String(arg.startTime),
             value: String(arg.loadTime),
             renderTime: String(arg.renderTime),
-            element: arg.element.className,
+            element: arg.element?.className,
             size: arg.size
         });
     };

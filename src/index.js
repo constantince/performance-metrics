@@ -24,9 +24,10 @@ Source(/\.gif/, function (arg) {
     console.log('5000 source', arg);
 });
 // TO be continue
-TTI(function (arg) {
-    console.log('5000 tti', arg);
-});
+console.log('TTI', TTI({ minValue: 10000 }));
+// TTI({minValue: 10000}).then(res => {
+//     console.log('this is tti',res);
+// });
 export default { FP: FP, FCP: FCP, LCP: LCP, CLS: CLS, TTFB: TTFB, Source: Source, TTI: TTI };
 /*
 import Perf from 'performance-metrics';

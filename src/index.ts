@@ -30,9 +30,10 @@ Source(/\.gif/, (arg) => {
     console.log('5000 source', arg);
 });
 // TO be continue
-TTI(arg => {
-    console.log('5000 tti', arg);
-});
+console.log('TTI', TTI({minValue: 10000}));
+// TTI({minValue: 10000}).then(res => {
+//     console.log('this is tti',res);
+// });
 
 
 
