@@ -1,4 +1,4 @@
-// import {getFirstConsistentlyInteractive} from "tti-polyfill";
+import {getFirstConsistentlyInteractive} from "tti-polyfill";
 
 //no long task and less than two in-flight network request;
 // const QuiteTime = 5000;

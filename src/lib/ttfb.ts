@@ -8,7 +8,7 @@ const afterLoad = (callback: () => void) => {
     } else {
         window.addEventListener('pageshow', callback);
     }
-}
+}=
 
 const TTFB = (callback: HandleCustom) => {
 
