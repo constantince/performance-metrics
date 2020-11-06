@@ -6,36 +6,6 @@ import TTFB from './lib/ttfb';
 import TTI from './lib/tti';
 import Source from './lib/resource';
 
-FP((arg) => {
-    console.log('5000 fp',arg);
-});
-
-FCP((arg) => {
-    console.log('5000 fcp',arg);
-});
-
-LCP((arg) => {
-    console.log('5000 lcp',arg);
-});
-
-CLS((arg) => {
-    console.log('5000 cls', arg)
-});
-
-TTFB((arg) => {
-    console.log('5000 ttfb', arg);
-});
-
-Source(/\.gif/, (arg) => {
-    console.log('5000 source', arg);
-});
-// TO be continue
-console.log('TTI', TTI({minValue: 10000}));
-// TTI({minValue: 10000}).then(res => {
-//     console.log('this is tti',res);
-// });
-
-
 
 export default { FP, FCP, LCP, CLS, TTFB, Source, TTI };
 
